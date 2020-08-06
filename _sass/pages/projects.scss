@@ -1,0 +1,22 @@
+// Common (extends page)
+@import "./page.scss";
+
+.projects-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&> .col- {
+		margin: 4px;
+		margin-bottom: 2rem;
+		flex-basis: 28rem;
+
+		// display: flex;
+		// flex-direction: column;
+	}
+}
+
+.project .card-footer {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}

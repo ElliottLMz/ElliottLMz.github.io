@@ -1,0 +1,26 @@
+<header role="navigation" class="navigation">
+	<div class="container-fluid navigation__container">
+		<a href="/"><span>Elliott Mozley</span></a>
+		
+		<nav>
+			<a href="/" {%if include.route == "home"%}class="navigation--active"{%endif%}>
+				<span>Home</span>
+			</a>
+			<a href="/about" {%if include.route == "about"%}class="navigation--active"{%endif%}>
+				<span>About</span>
+			</a>
+			<a href="/projects" {%if include.route == "projects"%}class="navigation--active"{%endif%}>
+				<span>Projects</span>
+			</a>
+
+			<a href="/blog" {%if include.route == "blog"%}class="navigation--active"{%endif%}>
+				<span>Blog</span>
+			</a>
+
+			<!-- external link -->
+			<a href="https://devforum.roblox.com/t/358329" target="_blank">
+				<span>RbxDev portfolio</span>&nbsp;{% include outbound.html %}
+			</a>
+		</nav>
+	</div>
+</header>

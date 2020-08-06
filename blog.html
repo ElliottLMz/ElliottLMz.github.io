@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+---
+
+<h1>Latest Posts</h1>
+
+<ul>
+	{% for post in site.posts %}
+		<li>
+			<p class="blogpost-item"><a class="h4 blogpost-item" href="{{ post.url }}">
+				{{ post.title }}</a>&nbsp;&nbsp;
+				<span class="text-muted small">{{ post.date | date_to_string }}</span>
+			</p>
+			{{ post.excerpt }}
+		</li>
+	{% endfor %}
+</ul>
