@@ -45,18 +45,9 @@
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.navigation__container {
 		flex-direction: column;
-
-		a {
-			border-bottom: 0px solid transparent !important;
-
-			&.navigation--active,
-			&:hover {
-				text-decoration: underline
-			}
-		}
 
 		nav {
 			flex-direction: column;
