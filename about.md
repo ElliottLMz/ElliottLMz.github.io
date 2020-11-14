@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: pagealt
 title: About Me
-route: about
+permalink: /about/
 ---
 
-## About Me
+# About Me
 
+<br/>
 Hello, I'm Elliott. I'm a teenager from London with an interest with law, sociology, psychology,
 business and economics, politics, railways, electronics, technology, programming, and game design.
 I'm currently doing my GCSEs in Sociology, Psychology, Business Studies, and History.

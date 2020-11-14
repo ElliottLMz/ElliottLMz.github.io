@@ -1,0 +1,67 @@
+---
+layout: page
+title: My Projects
+permalink: /projects/
+---
+
+<h1 class="text-center">My Projects</h1>
+
+<div class="deck">
+	<div class="card">
+		<h2>Kayak</h2>
+		<p><a href="https://github.com/elliottlmz/kayak">GitHub</a> - <a href="https://emozley.uk/kayak">Docs</a></p>
+
+		<p class="card__text">Kayak is a package manager intended for Roblox developers using <a href="https://rojo.space" rel="nofollow">Rojo</a>.</p>
+	</div>
+
+	<div class="card">
+		<h2>This Website</h2>
+		<p><a href="https://github.com/ElliottLMz/ElliottLMz.github.io">GitHub</a> - <a class="!nofocus" href="/" id="link" rel="nofollow">View</a></p>
+
+		<p class="card__text">This website was entirely built by myself (look ma, no bootstrap!) using Jekyll and GitHub Pages.</p>
+	</div>
+
+	<div class="card">
+		<h2>Project: Titan</h2>
+
+		<p class="card__text">Project: Titan is an ambitious RPG developed by <a href="https://twitter.com/TeamMNIS" rel="nofollow">Midnight Interactive Studios</a>, of which I am the Technical Director.
+			It will release in early 2021.</p>
+	</div>
+
+	<div class="card">
+		<h2>Animations: Mocap</h2>
+		<p><a href="https://roblox.com/games/3093229294">Play on Roblox</a></p>
+
+		<p class="card__text">
+			I'm the technical director for Animations: Mocap. This involves programming the games code and
+			working with contracted developers and the game's producers to release new content.
+		</p>
+
+		<p class="card__text">Animations: Mocap has over 143 million plays, 8,000 peak CCU, and over 1 million community members.</p>
+	</div>
+
+	<div class="card">
+		<h2>Other Roblox games</h2>
+		<p class="card__text">
+			I've worked on several Roblox games as a developer, which combined have over 55 million plays.
+		</p>
+	</div>
+</div>
+
+<script>
+let clicks = 0
+let still = "still"
+document.getElementById("link").onclick = function(event) {
+	event.preventDefault()
+	clicks++
+
+	if (clicks == 1) {
+		document.getElementById("link").innerText = "You're already here!"
+	} else if (clicks == 2) {
+		document.getElementById("link").innerText = `You're still here!`
+	} else if (clicks < 5) {
+		still = still + " STILL"
+		document.getElementById("link").innerText = `You're ${still} here!`
+	}
+}
+</script>

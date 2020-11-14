@@ -1,0 +1,38 @@
+---
+---
+
+$primary: #1abc9c;
+$black: #040b14;
+$white: #efefef;
+
+$transition: 150ms ease;
+
+* {
+	// padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&::selection {
+		background-color: $primary;
+		color: $white;
+	}
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: $black;
+	font-weight: 400;
+	background-color: #ffffff;
+}
+
+.container {
+	display: block;
+}
+
+@import "./header";
+@import "./card";
+@import "./hero";
+@import "./blog";
+@import "./misc";
