@@ -1,63 +1,31 @@
 ---
-layout: index
-route: home
+title: "Home"
+layout: page
+permalink: /
 ---
 
-<section class="jumbotron jumbotron-fluid text-center main-jumbotron">
-	<div class="container">
-		<img src="/assets/images/profilepicture.png" alt="ElliottLMz Profile Picture" aria-visible="false" class="profile-picture" width="100px" height="100px">
-		<h1 class="jumbotron-heading">Elliott Mozley</h1>
-		<p class="lead text-muted username">@elliottlmz</p>
-		<p class="h5 lead text-muted">
-			Jack of all trades, master of none; but a jack of some trades is better than none.
-			<br/><code class="text-muted">tech enthusiast, programmer, game and ux designer, producer, map architect</code>
-			<br/>
-		</p>
-		<p class="buttons">
-		{% comment %}
-			<a href="https://twitter.com/" class="btn btn-outline-primary" title="Twitter">
-				<i aria-hidden="true" class="fab fa-twitter"></i>
-			</a>
-		{% endcomment %}
+<div class="deck deck--centered text-center">
+	<div class="card">
+		<h2><a href="/projects/" class="stretched-link">My Projects</a></h2>
 
-			<a href="https://github.com/elliottlmz" class="btn btn-outline-primary" title="GitHub">
-				<i aria-hidden="true" class="fab fa-github"></i>
-			</a>
-
-			<a href="https://www.roblox.com/users/47890485/profile" class="btn btn-outline-primary" title="Roblox profile">
-				<i aria-hidden="true" class="fab icon-icon-roblox"></i>
-			</a>
-
-			<a href="https://discordapp.com/users/340861504255557634" class="btn btn-outline-primary" title="Discord: Elliott#1337">
-				<i aria-hidden="true" class="fab fa-discord"></i>
-			</a>
-
-			<a href="https://www.npmjs.com/~elliottlmz" class="btn btn-outline-primary" title="npm">
-				<i aria-hidden="true" class="fab fa-npm"></i>
-			</a>
-		</p>
-	</div>
-</section>
-
-<section class="container links">
-	<div class="card card-interactive">
-		<div class="card-body">
-			<a href="/projects" class="card-link stretched-link"><h5 class="card-title">View projects</h5></a>
-			<p class="card-text">My portfolio and showcase, a collection of my work.</p>
-		</div>
+		<p class="card__text">My portfolio and showcase; a collection of my work.</p>
 	</div>
 
-	<div class="card card-interactive">
-		<div class="card-body">
-			<a href="/about" class="card-link stretched-link"><h5 class="card-title">About me</h5></a>
-			<p class="card-text">A summary of me, my qualifications, my experience.</p>
-		</div>
+	<div class="card">
+		<h2><a href="/about/" class="stretched-link">About Me</a></h2>
+
+		<p class="card__text">A summary of my, my qualifications, and my experience.</p>
 	</div>
 
-	<div class="card card-interactive">
-		<div class="card-body">
-			<a href="/blog" class="card-link stretched-link"><h5 class="card-title">My blog</h5></a>
-			<p class="card-text">Thoughts, showing off, and sharing.</p>
-		</div>
+	<div class="card">
+		<h2><a href="/blog/" class="stretched-link">My Blog</a></h2>
+
+		<p class="card__text">Thoughts and showing off.</p>
 	</div>
-</section>
+
+	<div class="card">
+		<h2><a href="/contact/" class="stretched-link">Contact Me</a></h2>
+
+		<p class="card__text">Follow my work or get in touch</p>
+	</div>
+</div>

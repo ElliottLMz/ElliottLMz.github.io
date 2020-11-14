@@ -1,0 +1,55 @@
+.text-center {
+	text-align: center;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	outline: none !important;
+
+	&:hover {
+		transition: color $transition;
+		color: darken($primary, 10%);
+	}
+
+	&:focus:not(.\!nofocus) {
+		transition: all none !important;
+		color: $black !important;
+		background-color: #ffdd00;
+
+		&::selection {
+			color: $black;
+		background-color: #ffdd00;
+		}
+	}
+}
+
+.stretched-link {
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 20;
+		content: "";
+	}
+}
+.post p {
+	padding-bottom: 1rem;
+
+	& > code {
+		background-color: $white;
+		padding: 1px 4px;
+	}
+}
+
+.post figure.highlight {
+	padding-bottom: 1rem;
+}
+
+.language-plaintext {
+	color: #e83e8c;
+}
