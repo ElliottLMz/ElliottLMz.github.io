@@ -7,22 +7,10 @@ a {
 	text-decoration: none;
 	text-decoration: underline;
 	text-decoration-color: transparent;
-	outline: none !important;
+	transition: color $transition;
 
 	&:hover {
-		transition: color $transition;
 		color: darken($primary, 10%);
-	}
-
-	&:focus:not(.\!nofocus) {
-		transition: all none !important;
-		color: $black !important;
-		background-color: #ffdd00;
-
-		&::selection {
-			color: $black;
-		background-color: #ffdd00;
-		}
 	}
 }
 
