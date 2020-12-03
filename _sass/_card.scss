@@ -5,7 +5,11 @@
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	padding: 1rem;
 	border-radius: 10px;
-	transition: box-shadow $transition;
+	transition: border-color $transition;
+	
+	&:hover {
+		border-color: rgba(0, 0, 0, 0.5);
+	}
 }
 
 .card h2 {
