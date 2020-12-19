@@ -22,7 +22,6 @@
 .header h1 {
 	font-size: 22pt;
 	font-weight: 800;
-	color: $white;
 }
 
 .header a:not(.header__brand-link) {
@@ -31,7 +30,7 @@
 	color: $white;
 
 	&:hover {
-		color: $primary;
+		color: darken($white, 10%)
 	}
 }
 
