@@ -1,15 +1,27 @@
-<header class="header">
-	<div class="header__banner" role="banner" aria-hidden="true"></div>
-
-	<nav class="header__nav {% if include.overrideHeaderMargin != "true"
-		%}header__nav--has-margin{% endif %}" role="navigation">
-		<div class="container">
-			<h1><a href="/" class="header__brand-link">Elliott Mozley</a></h1>
-
-			<a href="/about">About</a>
-			<a href="/projects">Projects</a>
-			<a href="/blog">Blog</a>
-			<a href="/contact">Contact</a>
-		</div>
-	</nav>
+<header class="Navbar{% if include.overrideHeaderMargin == true %} mb-0{% endif %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 Navbar-Name fs-5 color-mozley fw-bold">
+        <a href="/">
+          <span>Eleanor</span>
+          <span>Mozley</span>
+        </a>
+      </div>
+      <div class="col-md-8">
+        <nav class="fw-bold">
+          <a href="/" title="Home">Home</a>
+          <a href="/about" title="About">About</a>
+          <a href="/projects" title="Projects">Projects</a>
+          <a href="/blog" title="Blog">Blog</a>
+          <a href="/contact" title="Contact">Contact</a>
+        </nav>
+      </div>
+      <div class="col-md-2 fs-5 Navbar-Social">
+        <a href="https://twitter.com/emozley_" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/eleanor_mozley" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/emozley/" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/emozley/" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
 </header>

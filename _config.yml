@@ -1,5 +1,12 @@
-url: https://emozley.uk
+# Flags
+show_drafts: false
+
+# Site configuration
+url: https://emozley.com
 permalink: /blog/:year/:month/:title/
+timezone: Europe/London
+
+# Technical configuration
 plugins:
   - jekyll-feed
 sass:

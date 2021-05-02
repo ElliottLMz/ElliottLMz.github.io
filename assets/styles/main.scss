@@ -8,7 +8,6 @@ $white: #efefef;
 $transition: 150ms ease;
 
 * {
-	// padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
@@ -16,23 +15,50 @@ $transition: 150ms ease;
 
 	&::selection {
 		background-color: $primary;
-		color: $white;
+		color: #fff;
 	}
 }
 
 body {
-	font-family: "Roboto", sans-serif;
-	color: $black;
-	font-weight: 400;
-	background-color: #ffffff;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 
-.container {
-	display: block;
+p {
+  margin: 0;
+}
+
+a:not(.btn),
+.card-link {
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    text-decoration: underline;
+    color: $primary;
+  }
+
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.color-mozley {
+  color: $primary;
+}
+
+.font-display {
+  font-family: "DM Sans Display", serif;
 }
 
 @import "./header";
-@import "./card";
-@import "./hero";
-@import "./blog";
-@import "./misc";
+@import "./footer";
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.post {
+  text-align: justify;
+}

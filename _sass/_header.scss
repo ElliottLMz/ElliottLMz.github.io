@@ -1,51 +1,67 @@
-.header__nav--has-margin {
-	margin-bottom: 12px;
+.Navbar {
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+  margin-bottom: 0.5rem;
+
+  .row {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.header__banner {
-	height: 6px;
-	width: 100%;
-	background-color: $primary;
+.Navbar-Name {
+  text-align: left;
+
+  a {
+    text-decoration: none !important;
+  }
 }
 
-.header__nav {
-	background-color: $black;
-	padding: 14px;
+.Navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-	& div {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
+  a {
+    margin: 0 1rem;
+    color: $black;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:focus {
+      color: $black;
+    }
+  }
 }
 
-.header h1 {
-	font-size: 22pt;
-	font-weight: 800;
+.Navbar-Social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    margin: 0 0.25rem;
+  }
 }
 
-.header a:not(.header__brand-link) {
-	font-size: 12pt;
-	font-weight: 500;
-	color: $white;
+.Navbar-Social,
+.Navbar-Name {
+  a {
+    color: $primary;
 
-	&:hover {
-		color: darken($white, 10%)
-	}
-}
+    &:hover {
+      color: darken($primary, 7);
+      text-decoration: none;
+    }
 
-@media (min-width: 800px) {
-	.header a:not(.header__brand-link) {
-		margin-left: 32px;
-	}
-
-	.header a:nth-child(2):not(.header__brand-link) {
-		margin-left: calc(32px + 90px);
-	}
-}
-
-@media (max-width: 800px) {
-	.header div {
-		flex-direction: column;
-	}
+    &:focus {
+      color: darken($primary, 7);
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
 }

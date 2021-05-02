@@ -5,9 +5,14 @@
 	</head>
 	<body>
 		<main>
-			{% include header.html overrideHeaderMargin="true" %}
+			{% include header.html overrideHeaderMargin=true %}
 
-			{% include post-hero.html %}
+			<div class="bg-light p-4 mb-3">
+        <div class="container text-center">
+          <h2>{{ page.title }}</h2>
+          <h4>{{ page.date | date_to_string }}<!-- • {{ page.author }}--></h4>
+        </div>
+      </div>
 
 			<div class="container post">
 				{{ content }}

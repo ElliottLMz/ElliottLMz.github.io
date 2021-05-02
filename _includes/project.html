@@ -1,0 +1,19 @@
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      {% if include.badgeColor == "warning" %}
+        <span class="badge mb-2 rounded-pill bg-{{ include.badgeColor }} text-dark">{{ include.badgeLabel }}</span>
+      {% elsif include.badgeLabel %}
+        <span class="badge mb-2 rounded-pill bg-{{ include.badgeColor }}">{{ include.badgeLabel }}</span>
+      {% endif %}
+      <h5 class="card-title">{{ include.title }}</h5>
+
+      <p class="card-text mb-2">{{ include.text }}</p>
+
+      <a href="{{ include.link1 }}" class="card-link">{{ include.link1Label }}</a>
+      {% if include.link2 %}
+        <a href="{{ include.link2 }}" class="card-link">{{ include.link2Label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

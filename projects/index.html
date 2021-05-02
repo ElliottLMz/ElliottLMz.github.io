@@ -1,67 +1,117 @@
 ---
+title: "My Projects"
 layout: page
-title: My Projects
 permalink: /projects/
 ---
 
-<h1 class="text-center">My Projects</h1>
+<h1>My Projects</h1>
 
-<div class="deck">
-	<div class="card">
-		<h2>Kayak</h2>
-		<p><a href="https://github.com/elliottlmz/kayak">GitHub</a> - <a href="https://emozley.uk/kayak">Docs</a></p>
+<p class="mb-3">
+  Programming is my passion; I regularly invest in expanding my knowledge and use my technical skills throughout my work.
+  Unfortunately a lot of my best work is either incomplete or non-public (but hey, I'm working on it).
+  This list demonstrates some of my best or most landmark pieces of work.
+</p>
 
-		<p class="card__text">Kayak is a package manager intended for Roblox developers using <a href="https://rojo.space" rel="nofollow">Rojo</a>.</p>
-	</div>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {% include project.html
+    title="Socially Distanced"
+    text="During the 2020 Coronavirus pandemic, myself and my sister created a web app that would predict how busy
+    places were. I was responsible for creating the web server API (which was hosted on Amazon EC2, and communicated with
+    the Python ML code) and the web frontend (which was hosted on Amazon S3)."
 
-	<div class="card">
-		<h2>This Website</h2>
-		<p><a href="https://github.com/ElliottLMz/ElliottLMz.github.io">GitHub</a> - <a class="!nofocus" href="/" id="link" rel="nofollow">View</a></p>
+    link1="https://github.com/kyralmozley/SociallyDistanced"
+    link1Label="GitHub"
 
-		<p class="card__text">This website was entirely built by myself (look ma, no bootstrap!) using Jekyll and GitHub Pages.</p>
-	</div>
+    link2="https://sociallydistanced.space"
+    link2Label="View"
 
-	<div class="card">
-		<h2>Project: Titan</h2>
+    badgeColor="warning"
+    badgeLabel="JS"
+  %}
 
-		<p class="card__text">Project: Titan is an ambitious RPG developed by <a href="https://twitter.com/TeamMNIS" rel="nofollow">Midnight Interactive Studios</a>, of which I am the Technical Director.
-			It will release in early 2021.</p>
-	</div>
+  {% include project.html
+    title="This Website"
+    text="This website was, with the exception of 1 or 2 libraries to save me
+    time, was built entirely myself using Jekyll and GitHub pages."
 
-	<div class="card">
-		<h2>Animations: Mocap</h2>
-		<p><a href="https://roblox.com/games/3093229294">Play on Roblox</a></p>
+    link1="https://github.com/emozley/emozley.github.io"
+    link1Label="GitHub"
 
-		<p class="card__text">
-			I'm the lead developer on Animations: Mocap. This involves programming the games code, managing JIRA boards, and
-			working with contracted developers and the game's producers to release new content.
-		</p>
+    badgeColor="danger"
+    badgeLabel="Ruby"
+  %}
 
-		<p class="card__text">Animations: Mocap has over 173 million plays, 10,000 peak CCU, and over 1.6 million group members.</p>
-	</div>
+  {% include project.html
+    title="Animations: Mocap"
+    text="As part of my role in Interactive Arts, I lead the development team on Animations: Mocap,
+    a dancing-based social game on Roblox. This involves supervising programmers (ensuring
+    the highest quality and standards) as well as organising and coordinating roadmaps.
+    Animations: Mocap has over 245 million plays, 16,000 peak CCU, and over 2.3 million community members."
 
-	<div class="card">
-		<h2>Other Roblox games</h2>
-		<p class="card__text">
-			I've worked on several Roblox games as a developer, which combined have over 220 million plays.
-		</p>
-	</div>
+    link1="https://roblox.com/games/3093229294"
+    link1Label="Roblox"
+
+    badgeColor="primary"
+    badgeLabel="Luau"
+  %}
+
+  {% include project.html
+    title="Interactive Arts"
+    text="Interactive Arts (t/a Midnight Interactive) is a UK and Ireland
+    Roblox game studio that specialises in creating immersive, popular games. I
+    lead its operations, technology, and administration teams and work with
+    cross-discipline staff and contractors to oversee these areas."
+
+    link1="https://twitter.com/TeamMNIS"
+    link1Label="Twitter"
+
+    badgeColor="dark"
+    badgeLabel="non-code"
+  %}
+
+  {% include project.html
+    title="Other Roblox Games"
+    text="I've worked on several Roblox games as sole programmer; these games, combined, have over 280 million plays at the time of my work."
+
+    badgeColor="primary"
+    badgeLabel="Luau"
+  %}
 </div>
 
-<script>
-let clicks = 0
-let still = "still"
-document.getElementById("link").onclick = function(event) {
-	event.preventDefault()
-	clicks++
+<h1 class="mt-4">Graveyard</h1>
 
-	if (clicks == 1) {
-		document.getElementById("link").innerText = "You're already here!"
-	} else if (clicks == 2) {
-		document.getElementById("link").innerText = `You're still here!`
-	} else if (clicks < 5) {
-		still = still + " STILL"
-		document.getElementById("link").innerText = `You're ${still} here!`
-	}
-}
-</script>
+<p class="mb-3">
+  These projects are deprecated, archived, and no-longer maintaned.
+  Not all projects will stay in the graveyard forever, but right now these are old projects
+  and not necessarily reflective of my current work and standards.
+</p>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {% include project.html
+    title="Kayak"
+    text="Kayak is a package manager intended for Roblox developers using Rojo.
+    It was written using Node.JS and is rather buggy; originally created to
+    solve a specific problem I had. It is in a limited maintanence state."
+
+    link1="https://github.com/emozley/kayak"
+    link1Label="GitHub"
+
+    link2="https://emozley.com/kayak/"
+    link2Label="Docs"
+
+    badgeColor="warning"
+    badgeLabel="JS"
+  %}
+
+  {% include project.html
+    title="Cachet"
+    text="Cachet was a makeshift library I created in December 2019 to quickly solve a problem I had. It's fairly neat
+    but not really all that good of a module."
+
+    link1="https://github.com/emozley/Cachet"
+    link1Label="GitHub"
+
+    badgeColor="primary"
+    badgeLabel="Luau"
+  %}
+</div>
